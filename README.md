@@ -6,7 +6,7 @@
 
 The report can be found in the `report.pdf` file.
 
-To execute the notebook the following libraries are required
+To execute the notebook the following libraries are required (`requirements.txt` is provided)
 
 - Python version 3.8.6
   - folium==0.11.0
@@ -26,12 +26,17 @@ To execute the notebook the following libraries are required
   - rgdal 1.5-19 
   - spdep 1.1-5
 
-The most convenient way to install the Python dependencies is by the use of a virtual environment, following these steps:
+The most convenient way to install the Python dependencies should be by using a virtual environment, following these steps, but there are known problems of Jupyter using the wrong Python version and not the virtualenv:
+
+(if you use a debian-based distro you may need to run `sudo apt-get install libffi-dev libspatialindex-dev`)
 
 - `pyenv install 3.8.6`
 - `pyenv virtualenv 3.8.6 geospatial`
 - `pyenv activate geospatial`
+- `pip install --upgrade pip `
 - `pip install -r requirements.txt`
+- `jupyter lab`
+- And open `analysis.ipynb`
 
 For the R packages `install.packages()` should be sufficient
 
