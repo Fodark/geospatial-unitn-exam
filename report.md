@@ -42,28 +42,28 @@ The code follows this structure:
 
 As expected from this city, most of the AirBnBs are located in the city center, where we can find almost 75% of them, tourists want to be as close as possible to the main attractions and this number confirms it.
 
-Unexpectedly, the most expensive district is not the center, but *Gavinana Galluzzo*, the district situated in the South-East, but the reason is simple. This neighborhood is outside the city, and has a lot of green areas around small villages, and the AirBnB structures situated here are luxury *villas* and their price can reach 8,000 euros per night.
+Unexpectedly, the most expensive district is not the center, but *Gavinana Galluzzo*, the district situated in the South-East, but the reason is simple. This neighborhood is outside the city, and has a lot of green areas around small villages, and the AirBnB structures situated there are luxury *villas* and their price can reach 8,000 euros per night.
 
-Apart from the price consideration, Florence's attractive sites are almost entirely contained in the city center, while the rest of the neighborhoods have almost no points of interest, out of the 500 points marked as tourism on OpenStreetMap, 410 are located in the city center, while *Gavinana Galluzzo* holds 16 of these activities, suggesting a different type of customers for that zone.
+Apart from the price consideration, Florence's attractive sites are almost entirely contained in the city center, while the rest of the neighborhoods have almost no points of interest, out of the 500 points marked as *tourism* on OpenStreetMap, 410 are located in the city center, while *Gavinana Galluzzo* holds 16 of these activities, suggesting a different type of customers for that zone.
 
-Taking Palazzo Vecchio as a reference museum we have seen that the nearest AirBnBs are extremely close, so much that OpenStreetMap calculates a 0 meters walk-distance to reach it, meaning they get mapped to the same point on the street graph. Similar results have been noticed around the Uffizi gallery indicating that many structures try to be more appealing to tourists by being close to the main museum and most famous city points.
+Taking Palazzo Vecchio as a reference museum we have seen that the nearest AirBnBs are extremely close, so much that OpenStreetMap calculates a 0 meters walk-distance to reach it, meaning they get mapped to the same point on the street graph. Similar results have been noticed around the Uffizi gallery indicating that many structures try to be more appealing to tourists by being close to the main museums and most famous city points.
 
-The city center is also rich in services, and our study showed that from the AirBnBs located around Palazzo Vecchio you can reach in an area of 300 meters almost 100 different services, including pharmacies, supermarkets and restaurants.
+The city center is also rich in services, and our study showed that from the AirBnBs located around Palazzo Vecchio you can reach almost 100 different services in an area of 300 meters, including pharmacies, supermarkets and restaurants.
 
-Lastly we studied the autocorrelation and regression of price in the various districts but we found that there is almost none correlation and that therefore neighboring districts do not affect the price of AirBnBs, and little statistical significance has been found when trying to correlate the price to other demographical data such as population, number of structures and services, the price is not determined by these factors.
+Lastly we studied the autocorrelation and regression of price in the various districts but we found that there is almost no correlation and that therefore neighboring districts do not affect the price of AirBnBs, and little statistical significance has been found when trying to correlate the price to other demographical data such as population, number of structures and services; the price is not determined by these factors.
 
 ### Conclusions
 
 The study confirmed that Florence is one of the most attractive cities in Italy for tourists, and this is clear by the number of structures and attractions in the city center, the most famous part of the city known worldwide. A surprising phenomenon emerged from the study, that the most expensive area of Florence is not the center, as one would expect, but a district to the South-East, *Gavinana Galluzzo*, a district rich in green areas and luxury villas.
 
-The final part of the study showed that the mean price presents almost no autocorrelation, so every district is independent of the others when determining the AirBnB price and also independent from other factors as population and number of POIs, as shown by the case of *Gavinana*, where there is little population, a low number of POIs but a higher mean price.
+The final part of the study showed that the mean price presents almost no autocorrelation, so every district is independent of the others when determining the AirBnB price and also independent from other factors such as population and number of POIs, as shown by the case of *Gavinana*, where there is little population, a low number of POIs but a the highest mean price.
 
-This last part has some clear limitations due to the low number of districts in the city, and therefore providing low statistical significance.
+This last part has some clear limitations due to the low number of districts in the city, and therefore the models have low statistical significance.
 
 ### Considerations on the availability of data
 
-It is appreciable to notice more and more Open Data available from local cities and from government institutions and, in particular for the Florence case, we appreciated the use of open format such as CSV (although some closed source formats are available, e.g. XLS) and the use of permissive licenses, in this case CC BY. On the other hand, a noticeable drawback is the interaction with the City Data Portal and the explanation of the data, which is left to the final user based only on the name of the dataset and the manual inspection of the latter.
+It is appreciable to notice more and more Open Data available from local cities and from government institutions and, in particular for the Florence case, we appreciated the use of open formats such as CSV (although some closed source formats are available, e.g. XLS) and the use of permissive licenses, in this case CC BY. On the other hand, a noticeable drawback is the interaction with the City Data Portal and the explanation of the data, which is left to the final user based only on the name of the dataset and the manual inspection of the data.
 
 A final note has to refer to raster data, which in the end have not been used in these analysis because of the interactions with the *GEOscopio Fototeca* of Tuscany, which does not provide an accessible way to download raster images; there are no clear instructions on how to download and interact with the downloaded data.
 
-The service is provided also via WMS, but the images provided through this service cover the whole Tuscany, which was not suitable for our analysis. 
+The service is provided also via WMS, but the images provided through this way cover the whole Tuscany, which was not suitable for our analysis. 
